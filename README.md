@@ -6,7 +6,9 @@ The goal of this project is to create a fully featured production quality machin
 While there are multiple libraries already available, building one from the ground up will help me learn how the models work under the hood, and put into practice object orientated methodologies.
 
 Please review the workbooks to see the library in use, as well as the aslearn.py for the library code.
+ - <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/aslearn.py'> aslearn Library</a>
  - <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/MNIST%20Logistic.ipynb'> Logistic Regression</a>
+ - <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/MNIST%20PCA%20and%20K%20Means.ipynb'> PCA and K-Means</a>
 
 # Supported Models:
 
