@@ -22,10 +22,10 @@ Please review the workbooks to see the library in use, as well as the aslearn.py
 
 **2. Stochastic Gradient Descent:**
   * Linear Regression
-   * Predict a single number target 
+    * Predict a single number target 
   * Logistic Regression
-   * Predict a class target
-   * Also supports multi class detection and handeling inside of the class for ease of use 
+    * Predict a class target
+    * Also supports multi class detection and handeling inside of the class for ease of use 
 
 **3. Normal Equation:**
   * Direct solution for theta.
