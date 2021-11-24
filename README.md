@@ -7,8 +7,10 @@ While there are multiple libraries already available, building one from the grou
 
 Please review the workbooks to see the library in use, as well as the aslearn.py for the library code.
  - <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/aslearn.py'> aslearn Library</a>
- - <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/MNIST%20Logistic.ipynb'> Logistic Regression</a>
- - <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/MNIST%20PCA%20and%20K%20Means.ipynb'> PCA and K-Means</a>
+ - <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/Notebook%20-%20Neural%20Network%20on%20MNIST.ipynb'> Neural Network AND PCA</a>
+ - <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/Notebook%20-%20PCA%20and%20K%20Means%20on%20MNIST.ipynb'> K-Means and PCA</a>
+ - <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/Notebook%20-%20Logistic%20Regression%20on%20MNIST.ipynb'> Logistic Regression</a>
+
 
 # Supported Models:
 
