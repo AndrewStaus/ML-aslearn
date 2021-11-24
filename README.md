@@ -6,33 +6,37 @@ The goal of this project is to create a fully featured production quality machin
 While there are multiple libraries already available, building one from the ground up will help me learn how the models work under the hood, and put into practice object orientated methodologies.
 
 Please review the workbooks to see the library in use, as well as the aslearn.py for the library code.
- - <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/aslearn.py'> aslearn Library</a>
- - <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/Notebook%20-%20Neural%20Network%20on%20MNIST.ipynb'> Neural Network and PCA</a>
- - <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/Notebook%20-%20PCA%20and%20K%20Means%20on%20MNIST.ipynb'> K-Means and PCA</a>
- - <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/Notebook%20-%20Logistic%20Regression%20on%20MNIST.ipynb'> Logistic Regression</a>
+ * <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/aslearn.py'> aslearn Library</a>
+ * <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/Notebook%20-%20Neural%20Network%20on%20MNIST.ipynb'> Neural Network and PCA</a>
+ * <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/Notebook%20-%20PCA%20and%20K%20Means%20on%20MNIST.ipynb'> K-Means and PCA</a>
+ * <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/Notebook%20-%20Logistic%20Regression%20on%20MNIST.ipynb'> Logistic Regression</a>
 
 
 # Supported Models:
 
 **1. Neural Network:**
-  - Fully Connected Deep Neural Network.
-  - Backpropagation with a SGD optimizer
-  - Reinforcement learning through a genetic algorithm
-  - Multiple Activation Functions including leaky ReLU, Softmax, and Linear
+  * Fully Connected Deep Neural Network.
+  * Backpropagation with a SGD optimizer
+  * Reinforcement learning through a genetic algorithm
+  * Multiple Activation Functions including leaky ReLU, Softmax, and Linear
 
 **2. Stochastic Gradient Descent:**
-  - Linear Regression
-  - Logistic Regression
+  * Linear Regression
+   * Predict a single number target 
+  * Logistic Regression
+   * Predict a class target
+   * Also supports multi class detection and handeling inside of the class for ease of use 
 
 **3. Normal Equation:**
-  - Direct solution for theta.  Computes (XᵀX)⁻¹ which is O(n³)
-  - Not appropriate for large datasets (greater than 10,000)
-  - Not appropriate for singular or degenerate matrices
+  * Direct solution for theta.
+  * Computes (XᵀX)⁻¹ which is O(n³)
+    * Not suitable for large datasets (greater than 10,000)
+    * Not suitable for singular or degenerate matrices
 
 **3. Principal Component Analysis:**
-  - Dimensionality reduction through eigenvectors
-  - Supports specified number of features
-  - Supports variance percentage to automatically select number of feature to retain variance
+  * Dimensionality reduction through eigenvectors
+  * Supports specified number of features
+  * Supports variance percentage to automatically select number of feature to retain variance
 
 **4. K-Means:**
   -  Cluster assignment through finding the mean value of centroids
@@ -41,18 +45,18 @@ Please review the workbooks to see the library in use, as well as the aslearn.py
 
 # Utilities:
   **1.Scaler:**
-  - Fits to the mean and standard deviation of the data and transforms it to be centered around 0
+  * Fits to the mean and standard deviation of the data and transforms it to be centered around 0
   
   **2. Label Encoder:**
-  - Replaces Labels with integer values, retains mapping so data can be transformed back to original
+  * Replaces Labels with integer values, retains mapping so data can be transformed back to original
   
   **3. One Hot Encoder**
-  - Replaces Labels with one hot encoded array, retains mapping so data can be transformed back to original
+  * Replaces Labels with one hot encoded array, retains mapping so data can be transformed back to original
   
   **4. Helper Functions:**
-  - Confusion Matrix: Creates confusion matrix data for classification validation
-  - Under Sample: Rebalances dataset so that all classes have equal representation by pruning excess classes
-  - Prepend Ones: Adds a column vector of ones to the start of a matrix.  Useful for many machine learning algorithms that use biases
-  - Prepend Zeros: Adds a column vector of zeros to the start of a matrix.  Useful for regularized back propagation
-  - Shuffle:  Shuffles two datasets such that the indexes of the data are aligned.  Useful for shuffling X and y matrices between epoch iterations while keeping samples and targets aligned
-  - Train Test Split:  Splits data into two sets.  Useful for separating Training, Testing, and Validation sets for machine learning.
+  * Confusion Matrix: Creates confusion matrix data for classification validation
+  * Under Sample: Rebalances dataset so that all classes have equal representation by pruning excess classes
+  * Prepend Ones: Adds a column vector of ones to the start of a matrix.  Useful for many machine learning algorithms that use biases
+  * Prepend Zeros: Adds a column vector of zeros to the start of a matrix.  Useful for regularized back propagation
+  * Shuffle:  Shuffles two datasets such that the indexes of the data are aligned.  Useful for shuffling X and y matrices between epoch iterations while keeping samples and targets aligned
+  * Train Test Split:  Splits data into two sets.  Useful for separating Training, Testing, and Validation sets for machine learning.
