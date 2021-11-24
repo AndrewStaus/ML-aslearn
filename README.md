@@ -25,7 +25,7 @@ Please review the workbooks to see the library in use, as well as the aslearn.py
     * Predict a single number target 
   * Logistic Regression
     * Predict a class target
-    * Also supports multi class detection and handeling inside of the class for ease of use 
+    * Also supports multi class detection and handling inside of the class for ease of use 
 
 **3. Normal Equation:**
   * Direct solution for theta.
@@ -36,7 +36,7 @@ Please review the workbooks to see the library in use, as well as the aslearn.py
 **3. Principal Component Analysis:**
   * Dimensionality reduction through eigenvectors
   * Supports specified number of features
-  * Supports variance percentage to automatically select number of feature to retain variance
+  * Supports variance percentage to automatically select number of features to retain variance
 
 **4. K-Means:**
   -  Cluster assignment through finding the mean value of centroids
