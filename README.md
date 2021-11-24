@@ -44,7 +44,7 @@ Please review the workbooks to see the library in use, as well as the aslearn.py
 
 
 # Utilities:
-  ** 1.Scaler:**
+  **1. Scaler:**
   * Fits to the mean and standard deviation of the data and transforms it to be centered around 0
   
   **2. Label Encoder:**
