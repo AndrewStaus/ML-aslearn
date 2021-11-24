@@ -7,7 +7,7 @@ While there are multiple libraries already available, building one from the grou
 
 Please review the workbooks to see the library in use, as well as the aslearn.py for the library code.
  - <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/aslearn.py'> aslearn Library</a>
- - <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/Notebook%20-%20Neural%20Network%20on%20MNIST.ipynb'> Neural Network AND PCA</a>
+ - <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/Notebook%20-%20Neural%20Network%20on%20MNIST.ipynb'> Neural Network and PCA</a>
  - <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/Notebook%20-%20PCA%20and%20K%20Means%20on%20MNIST.ipynb'> K-Means and PCA</a>
  - <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/Notebook%20-%20Logistic%20Regression%20on%20MNIST.ipynb'> Logistic Regression</a>
 
@@ -24,7 +24,7 @@ Please review the workbooks to see the library in use, as well as the aslearn.py
   - Two child classes: Linear Regression and Logistic Regression
   - Logistic Regression supports multi-class data detection and automatically trains required classifiers
 
-**3. Principal Comonent Analysis:**
+**3. Principal Component Analysis:**
   - Dimensionality reduction through eigenvectors
   - Supports specified number of features
   - Supports variance percentage to automatically select number of feature to retain variance
