@@ -21,8 +21,13 @@ Please review the workbooks to see the library in use, as well as the aslearn.py
   - Multiple Activation Functions including leaky ReLU, Softmax, and Linear
 
 **2. Stochastic Gradient Descent:**
-  - Two child classes: Linear Regression and Logistic Regression
-  - Logistic Regression supports multi-class data detection and automatically trains required classifiers
+<p>
+ <ol>
+  <li>a) Linear Regression</li>
+  <li>b) Logistic Regression</li>
+ </ol>
+</p>
+
 
 **3. Principal Component Analysis:**
   - Dimensionality reduction through eigenvectors
