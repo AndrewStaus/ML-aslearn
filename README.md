@@ -6,7 +6,7 @@ The goal of this project is to create a fully featured production quality machin
 While there are multiple libraries already available, building one from the ground up will help me learn how the models work under the hood, and put into practice object orientated methodologies.
 
 Please review the workbooks to see the library in use, as well as the aslearn.py for the library code.
-
+ - <a href = 'https://github.com/AndrewStaus/ML-aslearn/blob/main/MNIST%20Logistic.ipynb'> Logistic Regression</a>
 
 # Supported Models:
 
