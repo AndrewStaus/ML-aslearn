@@ -24,6 +24,11 @@ Please review the workbooks to see the library in use, as well as the aslearn.py
   - Linear Regression
   - Logistic Regression
 
+**3. Normal Equation:**
+  - Direct solution for theta.  Computes (XᵀX)⁻¹ which is O(n³)
+  - Not appropriate for large datasets (greater than 10,000)
+  - Not appropriate for singular or degenerate matrices
+
 **3. Principal Component Analysis:**
   - Dimensionality reduction through eigenvectors
   - Supports specified number of features
@@ -31,6 +36,8 @@ Please review the workbooks to see the library in use, as well as the aslearn.py
 
 **4. K-Means:**
   -  Cluster assignment through finding the mean value of centroids
+
+
 
 # Utilities:
   **1.Scaler:**
