@@ -1,4 +1,4 @@
-"""
+"""# aslearn
 **aslearn** is the name of my toy ML library.  It is named aslearn in homage to scikit-learn (sklearn)
 replacing “sk” with my initials “as”-- very creative I know. As the name might suggest, aslearn been
 developed to function with a similar API to scikit-learn, with a few extra features that I thought
