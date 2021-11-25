@@ -1,16 +1,3 @@
-"""# aslearn
-**aslearn** is the name of my toy ML library.  It is named aslearn in homage to scikit-learn (sklearn)
-replacing “sk” with my initials “as”-- very creative I know. As the name might suggest, aslearn been
-developed to function with a similar API to scikit-learn, with a few extra features that I thought
-would be interesting.
-
-I have not looked at the scikit-learn source code or documentation for reference and have reversed
-engineered its functionality solely from memory, so some things may be a bit different.
-Because aslearn is implemented completely in python using only the numpy library,  I have vectorized
-the math as much as I could with to keep performance reasonable,
-but the main goal of the project is not bleeding edge performance.
-"""
-
 import numpy as np
 np.seterr(divide='ignore', invalid='ignore')
 
@@ -832,7 +819,8 @@ class K_Means:
         """
 
         m, n = X.shape
-        self.centroids = np.random.rand(K,n)
+        max = np.max(X)
+        self.centroids = np.random.rand(K,n)*max
 
         for _ in range(epochs):
             if shuffle:
