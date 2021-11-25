@@ -132,10 +132,12 @@ class Neural_Network:
         Train network with back propagation using stochastic gradient descent.
 
         ### Args:
-            - X:
-            - y:
+            - X: Training data
+            - y: Training Targets
         
         ### Kwargs:
+            - X_test: Test data for classification problems.  Will automatically enable accuracy checking after each epoch
+            - y_test: Test targets for classification problems.  Will automatically enable accuracy checking after each epoch
             - epochs: How many itterations to process all training data
             - alpha: Learning Rate
             - batch_size: how many samples to use in each batch.  If set to 0 then use all data.
@@ -194,10 +196,10 @@ class Neural_Network:
         Return hypothesis for a given input
         
         ### Args:
-            - x: Input
+            - X: Input
 
         ### Returns:
-            Prediction
+            Prediction h(X)
         """
         X = np.array(X)
 
@@ -212,6 +214,16 @@ class Neural_Network:
         return a[:,1:] #h(X)
 
     def feed_forawrd(self, X:list):
+        """# Feed Forward
+        Feed training data through network, similar to predeict, but returns pre-activations and activations for all layers for use in back propagations
+        
+        ### Args:
+        - X: training data
+        
+        ### Returns:
+        - Z, A: Pre-activations and Activations for each layer
+        
+        """
         X = np.array(X)
 
         z = np.zeros(X.shape)
@@ -233,6 +245,18 @@ class Neural_Network:
 
 
     def back_propagate(self, y, z, a, llambda = 0):
+        """# Back Propogate
+        Calculate gradient of each layer in the network
+        
+        ### Args:
+        - y: Training targets
+        - z: Layer pre-activations
+        - a: Layer activations
+        
+        ### Kwargs:
+        - llambda: Regularization amount
+        
+        """
 
         m = len(y)
         theta = self.thetas
@@ -246,10 +270,12 @@ class Neural_Network:
         
         d.append(a[-1] - y)
         
+        # calculate error
         for i in indexs:
             g = activations[i-1]
             d[i] = np.dot(d[i+1], theta[i][:,1:]) *  g(z[i], derivative=True)
     
+        # calculate gradient
         for i, a in enumerate(a[:-1]):
             gw = (1/m) * np.dot(a[:,1:].T, d[i+1]) + (llambda/m) * theta[i][:,1:].T
             gb = (1/m) * np.sum(d[i+1], axis=0, keepdims=True)
@@ -262,7 +288,17 @@ class Neural_Network:
 
 
     def compute_loss(self, y:list, a:list, llambda: float=0):
-        """Compute the cost, or loss of the network"""
+        """# Compute Loss
+        Compute the cost, or loss of the network to determine training performance
+        
+        ### Args:
+        - y: targets
+        - a: layer activations
+        - llambda: regularization amount
+        
+        ## Returns:
+        - J: The loss of the network
+        """
         
         y = np.array(y)
         m = len(y)
@@ -276,13 +312,34 @@ class Neural_Network:
 
 
     def compute_accuracy(self, X:list, y, X_test:list, y_test:list):
-        """Compute the accuracy of the network for classification problems"""
+        """# Compute Accuracy
+        Compute the accuracy of the network for classification problems
+        
+        ### Args:
+        - X: Training Data
+        - y: Training Targets
+        - X_test: Test Data
+        - y_test: Test Targets
+        
+        ### Returns:
+        - None, values are stored in class variable "accuracy_history"
+        
+        """
         train = np.sum(np.argmax(self.predict(X), axis=1) == np.argmax(y, axis=1)) / len(y)
         test =  np.sum(np.argmax(self.predict(X_test), axis=1) == np.argmax(y_test, axis=1)) / len(y_test)
         self.accuracy_history['Train'].append(train)
         self.accuracy_history['Test'].append(test)
 
-    def update_parameters(self, grad, alpha):     
+    def update_parameters(self, grad, alpha):
+        """# Update Parameters
+        Update the values of theta based off the gradient and learning rate
+        
+        ### Args:
+        - grad:  Gradients for theta calculated through back prop
+        - alpha: Learning rate
+        
+        
+        """
         
         for theta, g in zip(self.thetas, grad):
             theta -= alpha * g
@@ -342,7 +399,7 @@ class Neural_Network:
         Each parameter has a 50% probability to be selected from either parent.
         
         ### Args:
-            - spouse:
+            - spouse: the network to crossover with
 
         ### Returns:
             Child neural network"""
